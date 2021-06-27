@@ -10,6 +10,8 @@ import { SectionContainerComponent } from './components/section-container/sectio
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { SkillCardComponent } from './components/skill-card/skill-card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HeaderComponent } from './components/header/header.component';
     SectionContainerComponent,
     ContactMeComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    SkillsComponent,
+    SkillCardComponent
   ],
   imports: [
     BrowserModule,
