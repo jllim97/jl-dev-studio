@@ -1,0 +1,14 @@
+.section-wrapper {
+  position:relative;
+  height:100vh
+}
+.section-title {
+  top:12px;
+  left:50%;
+  transform: translate(-50%,0);
+  position:absolute;
+}
+
+.section-container-top {
+  padding-top: 4.25rem;
+}

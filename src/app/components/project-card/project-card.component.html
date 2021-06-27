@@ -1,0 +1,18 @@
+<div class="shadow p-3 mb-5 bg-white rounded">
+  <div class="row d-flex p-0">
+    <div class="col-4 text-center border-right" [ngClass]="{'order-1': imagePosition === 'left','order-2':imagePosition === 'right'}">
+      <img class="project-image" [src]="projectImg" alt="project Image"/>
+    </div>
+    <div class="col-8 text-center" [ngClass]="{'order-2': imagePosition === 'left','order-1':imagePosition === 'right'}">
+      <div class="project-content-box">
+        <h3>{{projectTitle}}</h3>
+      </div>
+      <div class="text-left py-2">
+        github link, production link placeholder
+      </div>
+      <p>
+      {{projectIntro}}
+      </p>
+    </div>
+  </div>
+</div>
