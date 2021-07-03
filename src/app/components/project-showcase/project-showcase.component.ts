@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfolioService } from './../../services/portfolio.service';
 
 @Component({
   selector: 'app-project-showcase',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectShowcaseComponent implements OnInit {
 
-  constructor() { }
+  constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit(): void {
+    this.portfolioService.getPortfolios().subscribe(response => {
+      console.log(response);
+    })
   }
 
 }
