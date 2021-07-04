@@ -16,7 +16,7 @@
 </div>
 <div class="sub-header py-1 bg-light">
   <div class="container">
-    <a href="#" *ngFor="let item of menus; let last = last">{{item?.label}}
+    <a class="sub-header-link" (click)="scrollTo(item?.toId)" *ngFor="let item of menus; let last = last">{{item?.label}}
       <ng-container *ngIf="!last">
         <span class="mx-2">|</span>
       </ng-container>

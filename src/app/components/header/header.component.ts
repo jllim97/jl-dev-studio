@@ -9,20 +9,30 @@ export class HeaderComponent implements OnInit {
   menus: Array<{
     label: string,
     routerLink: string[],
-    active: boolean
+    active: boolean,
+    toId?: string
   }> = [{
     label: 'Introduction',
     routerLink: [],
-    active: false
+    active: false,
+    toId: 'intro'
   },{
     label: 'Projects',
     routerLink: [],
-    active: false
+    active: false,
+    toId: 'projects'
+  },
+  {
+    label: 'Skills',
+    routerLink: [],
+    active: false,
+    toId: 'skills'
   },
 {
   label: 'Contact Me',
   routerLink: [],
-  active: false
+  active: false,
+  toId: 'contactMe'
 }];
 
   constructor() { }
@@ -32,6 +42,14 @@ export class HeaderComponent implements OnInit {
 
   get imagePath(): string {
     return "assets/header/";
+  }
+
+  scrollTo(toId?: string) {
+    console.log(toId);
+    const element: HTMLElement | null = document.getElementById(toId ?? '');
+    const clientTop = element?.offsetTop as number - 94;
+    console.log(clientTop);
+    window.scrollTo({behavior: 'smooth', top: clientTop });
   }
 
 }

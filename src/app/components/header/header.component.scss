@@ -7,3 +7,17 @@
 .header-wrapper {
   height: 62px;
 }
+
+.sub-header a {
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+    color: #4287f5;
+  }
+
+  span {
+    color: black;
+  }
+
+}

@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SectionContainerComponent implements OnInit {
   @Input('title') sectionTitle: string | undefined;
   @Input() alignPosition: 'top'|'bottom'|'center' = 'center';
+  @Input() sectionId: string | undefined;
   constructor() { }
 
   ngOnInit(): void {

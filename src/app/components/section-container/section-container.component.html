@@ -1,4 +1,4 @@
-<div class="section-wrapper">
+<div [id]="sectionId" class="section-wrapper">
   <h3 *ngIf="sectionTitle" class="section-title">{{sectionTitle}}</h3>
   <div class="d-flex justify-content-center align-items-{{alignPosition}} section-container-{{alignPosition}} position-relative h-100">
     <ng-content></ng-content>
