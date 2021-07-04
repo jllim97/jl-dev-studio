@@ -1,6 +1,10 @@
-<div class="skill-card-container rounded p-3 shadow">
-  <div class="d-flex align-items-center justify-content-center flex-column">
-    <div>1</div>
-    <div>2</div>
+<div class="skill-card-container h-100 rounded p-3 shadow">
+  <div class="d-flex align-items-center h-100 justify-content-center flex-column">
+    <div>
+      <img class="img-fluid" [src]="skillImage" />
+    </div>
+    <div class="mt-auto">
+      {{skillName}}
+    </div>
   </div>
 </div>

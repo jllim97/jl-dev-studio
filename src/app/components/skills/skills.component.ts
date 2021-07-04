@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SkillCardModel } from '../skill-card/skill-card.component';
+import { SkillsCardConstant } from './skills-card.constant';
 
 @Component({
   selector: 'app-skills',
@@ -7,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
+  skillCardModels: SkillCardModel[] = SkillsCardConstant.skillCardModels;
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

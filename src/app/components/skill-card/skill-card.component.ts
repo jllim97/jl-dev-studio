@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-skill-card',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillCardComponent implements OnInit {
 
+  @Input() skillName: string = '';
+  @Input() skillImage: string = '';
   constructor() { }
 
   ngOnInit(): void {
   }
 
+}
+
+export interface SkillCardModel {
+  image: string;
+  label: string;
 }
