@@ -1,6 +1,5 @@
 .section-wrapper {
   position:relative;
-  height:100vh
 }
 .section-title {
   top:12px;
@@ -11,4 +10,8 @@
 
 .section-container-top {
   padding-top: 4.25rem;
+}
+
+.full-view-height {
+  height:100vh;
 }
